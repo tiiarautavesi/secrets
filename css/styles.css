@@ -36,11 +36,16 @@ background: linear-gradient(135deg, #f0b7a1 0%,#01b21f 24%,#01b21f 24%,#e802b2 3
   -webkit-text-fill-color: transparent;
 }
 
+h3 {
+  color: blue;
+}
+
 button {
   cursor: url('http://www.syboard.net/images/gameicons/gb-red.gif'), pointer;
 }
 
-.invite {
+.invite,
+.noInvite {
   display: none;
   position: absolute;
   top: 50%;
@@ -51,6 +56,9 @@ button {
   animation: zoom 2s forwards;
 }
 
+.noInvite {
+  text-align: center;
+}
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes boom {

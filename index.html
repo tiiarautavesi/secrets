@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="img/logo.png">
+  <link rel="icon" href="http://www.syboard.net/images/gameicons/gb-red.gif">
   <title>Tiia is an engineer</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,14 +16,18 @@
     
     <script>
       function OpenInvite() {
-        console.log('clicked');
         $('.invite').css('display', 'block');
+        $('.noInvite').css('display', 'none');
+      }
+      function OpenNo() {
+        $('.noInvite').css('display', 'block');
+        $('.invite').css('display', 'none');
       }
     </script>
     
     <h1>READY TO PARTY LIKE A REAL ENGINEER?</h1>
     <button onclick="OpenInvite()">YES</button>
-    <button>NO</button>
+    <button onclick="OpenNo()">NO</button>
     
     <div class="invite">
       <h2>
@@ -41,6 +45,13 @@
         <br>
         THEME: Engineer
       </h2>
+      <img src="https://media.tenor.com/images/47597d74a785476bc90e226af40e7b1d/tenor.gif">
     </div>
+    
+    <div class="noInvite">
+      <h3>No? Ok then.</h3>
+      <img src="https://i.gifer.com/uI0.gif">
+    </div>
+    
   </body>
 </html>
