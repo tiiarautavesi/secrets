@@ -1,0 +1,103 @@
+html {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url('http://joedale.typepad.com/photos/uncategorized/woman_web_surfing_hg_wht_1948.gif');
+  cursor: url('http://www.syboard.net/images/gameicons/gb-red.gif'), pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://farheenjannath.files.wordpress.com/2011/07/ict-ring3.gif?w=460');
+  
+}
+
+h1 {
+  font-size: 3rem;
+  color: yellow;
+  text-shadow: 0.2rem 0.2rem 1rem green;
+  animation: boom 0.2s infinite;
+}
+
+h2 {
+  font-family: monospace;
+  background: #f0b7a1; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #f0b7a1 0%, #01b21f 24%, #01b21f 24%, #e802b2 38%, #8c3310 50%, #dd2326 81%, #bf6e4e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #f0b7a1 0%,#01b21f 24%,#01b21f 24%,#e802b2 38%,#8c3310 50%,#dd2326 81%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #f0b7a1 0%,#01b21f 24%,#01b21f 24%,#e802b2 38%,#8c3310 50%,#dd2326 81%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-background-clip: text; /* Doesn't work on IE*/
+     -moz-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  cursor: url('http://www.syboard.net/images/gameicons/gb-red.gif'), pointer;
+}
+
+.invite {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  animation: zoom 2s forwards;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes boom {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+/* Standard syntax */
+@keyframes boom {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes zoom {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 30rem;
+    padding: 2rem;
+  }
+}
+
+/* Standard syntax */
+@keyframes zoom {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 30rem;
+    padding: 2rem;
+  }
+}
+
